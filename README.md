@@ -1,4 +1,5 @@
 # Face-recognition-using-python
+Just download the XML file and paste in your directory.
 
 Modules used:
   - cv2
