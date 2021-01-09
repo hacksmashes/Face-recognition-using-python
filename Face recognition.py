@@ -3,12 +3,12 @@ import numpy
 import os
 import imutils
 
-haar_file="D:\\Python\\AI\\Algorithm\\haarcascade_frontalface_default.xml"        
+haar_file="D:\\Python\\AI\\Algorithm\\haarcascade_frontalface_default.xml"   # give your directory of XML file      
 face_cascade=cv2.CascadeClassifier(haar_file)
-datasets="D:\\Python\\AI\\datasets"
+datasets="D:\\Python\\AI\\datasets"                                     # give the correct directory for dataset folder
 
 (images,labels,names,id)=([],[],{},0)
-cam=cv2.VideoCapture(0)
+cam=cv2.VideoCapture(0)                              
 
 for (subdirs,dirs,files) in os.walk(datasets):
     for subdir in dirs:
@@ -62,5 +62,3 @@ while True:
 
 cam.release()
 cv2.destroyAllWindows()    
-
-
